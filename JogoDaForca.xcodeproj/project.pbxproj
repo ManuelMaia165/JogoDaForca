@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA93F5C528789CDF0006A1EC /* JogoDaForca.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA93F5B228789CDE0006A1EC /* JogoDaForca.xcdatamodeld */; };
+		BA93F5C628789CDF0006A1EC /* JogoDaForca.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA93F5B228789CDE0006A1EC /* JogoDaForca.xcdatamodeld */; };
+		BA93F5C728789CDF0006A1EC /* JogoDaForcaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93F5B428789CDE0006A1EC /* JogoDaForcaApp.swift */; };
+		BA93F5C828789CDF0006A1EC /* JogoDaForcaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93F5B428789CDE0006A1EC /* JogoDaForcaApp.swift */; };
+		BA93F5C928789CDF0006A1EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93F5B528789CDE0006A1EC /* ContentView.swift */; };
+		BA93F5CA28789CDF0006A1EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93F5B528789CDE0006A1EC /* ContentView.swift */; };
+		BA93F5CB28789CDF0006A1EC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93F5B628789CDE0006A1EC /* Persistence.swift */; };
+		BA93F5CC28789CDF0006A1EC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93F5B628789CDE0006A1EC /* Persistence.swift */; };
+		BA93F5CD28789CDF0006A1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA93F5B728789CDF0006A1EC /* Assets.xcassets */; };
+		BA93F5CE28789CDF0006A1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA93F5B728789CDF0006A1EC /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA93F5B328789CDE0006A1EC /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
+		BA93F5B428789CDE0006A1EC /* JogoDaForcaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogoDaForcaApp.swift; sourceTree = "<group>"; };
+		BA93F5B528789CDE0006A1EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA93F5B628789CDE0006A1EC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		BA93F5B728789CDF0006A1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA93F5BC28789CDF0006A1EC /* JogoDaForca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JogoDaForca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA93F5C228789CDF0006A1EC /* JogoDaForca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JogoDaForca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA93F5C428789CDF0006A1EC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA93F5B928789CDF0006A1EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA93F5BF28789CDF0006A1EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA93F5AC28789CDD0006A1EC = {
+			isa = PBXGroup;
+			children = (
+				BA93F5B128789CDE0006A1EC /* Shared */,
+				BA93F5C328789CDF0006A1EC /* macOS */,
+				BA93F5BD28789CDF0006A1EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA93F5B128789CDE0006A1EC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BA93F5B428789CDE0006A1EC /* JogoDaForcaApp.swift */,
+				BA93F5B528789CDE0006A1EC /* ContentView.swift */,
+				BA93F5B628789CDE0006A1EC /* Persistence.swift */,
+				BA93F5B728789CDF0006A1EC /* Assets.xcassets */,
+				BA93F5B228789CDE0006A1EC /* JogoDaForca.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BA93F5BD28789CDF0006A1EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA93F5BC28789CDF0006A1EC /* JogoDaForca.app */,
+				BA93F5C228789CDF0006A1EC /* JogoDaForca.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA93F5C328789CDF0006A1EC /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				BA93F5C428789CDF0006A1EC /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA93F5BB28789CDF0006A1EC /* JogoDaForca (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA93F5D128789CDF0006A1EC /* Build configuration list for PBXNativeTarget "JogoDaForca (iOS)" */;
+			buildPhases = (
+				BA93F5B828789CDF0006A1EC /* Sources */,
+				BA93F5B928789CDF0006A1EC /* Frameworks */,
+				BA93F5BA28789CDF0006A1EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JogoDaForca (iOS)";
+			productName = "JogoDaForca (iOS)";
+			productReference = BA93F5BC28789CDF0006A1EC /* JogoDaForca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA93F5C128789CDF0006A1EC /* JogoDaForca (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA93F5D428789CDF0006A1EC /* Build configuration list for PBXNativeTarget "JogoDaForca (macOS)" */;
+			buildPhases = (
+				BA93F5BE28789CDF0006A1EC /* Sources */,
+				BA93F5BF28789CDF0006A1EC /* Frameworks */,
+				BA93F5C028789CDF0006A1EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JogoDaForca (macOS)";
+			productName = "JogoDaForca (macOS)";
+			productReference = BA93F5C228789CDF0006A1EC /* JogoDaForca.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA93F5AD28789CDD0006A1EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					BA93F5BB28789CDF0006A1EC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					BA93F5C128789CDF0006A1EC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = BA93F5B028789CDD0006A1EC /* Build configuration list for PBXProject "JogoDaForca" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA93F5AC28789CDD0006A1EC;
+			productRefGroup = BA93F5BD28789CDF0006A1EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA93F5BB28789CDF0006A1EC /* JogoDaForca (iOS) */,
+				BA93F5C128789CDF0006A1EC /* JogoDaForca (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA93F5BA28789CDF0006A1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA93F5CD28789CDF0006A1EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA93F5C028789CDF0006A1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA93F5CE28789CDF0006A1EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA93F5B828789CDF0006A1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA93F5C528789CDF0006A1EC /* JogoDaForca.xcdatamodeld in Sources */,
+				BA93F5CB28789CDF0006A1EC /* Persistence.swift in Sources */,
+				BA93F5C728789CDF0006A1EC /* JogoDaForcaApp.swift in Sources */,
+				BA93F5C928789CDF0006A1EC /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA93F5BE28789CDF0006A1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA93F5C628789CDF0006A1EC /* JogoDaForca.xcdatamodeld in Sources */,
+				BA93F5CC28789CDF0006A1EC /* Persistence.swift in Sources */,
+				BA93F5C828789CDF0006A1EC /* JogoDaForcaApp.swift in Sources */,
+				BA93F5CA28789CDF0006A1EC /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BA93F5CF28789CDF0006A1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA93F5D028789CDF0006A1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BA93F5D228789CDF0006A1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.edu.ifpb.pdm.aula.JogoDaForca;
+				PRODUCT_NAME = JogoDaForca;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA93F5D328789CDF0006A1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.edu.ifpb.pdm.aula.JogoDaForca;
+				PRODUCT_NAME = JogoDaForca;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA93F5D528789CDF0006A1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.edu.ifpb.pdm.aula.JogoDaForca;
+				PRODUCT_NAME = JogoDaForca;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BA93F5D628789CDF0006A1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.edu.ifpb.pdm.aula.JogoDaForca;
+				PRODUCT_NAME = JogoDaForca;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA93F5B028789CDD0006A1EC /* Build configuration list for PBXProject "JogoDaForca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA93F5CF28789CDF0006A1EC /* Debug */,
+				BA93F5D028789CDF0006A1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA93F5D128789CDF0006A1EC /* Build configuration list for PBXNativeTarget "JogoDaForca (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA93F5D228789CDF0006A1EC /* Debug */,
+				BA93F5D328789CDF0006A1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA93F5D428789CDF0006A1EC /* Build configuration list for PBXNativeTarget "JogoDaForca (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA93F5D528789CDF0006A1EC /* Debug */,
+				BA93F5D628789CDF0006A1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BA93F5B228789CDE0006A1EC /* JogoDaForca.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA93F5B328789CDE0006A1EC /* Shared.xcdatamodel */,
+			);
+			currentVersion = BA93F5B328789CDE0006A1EC /* Shared.xcdatamodel */;
+			path = JogoDaForca.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BA93F5AD28789CDD0006A1EC /* Project object */;
+}
