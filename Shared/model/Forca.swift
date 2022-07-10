@@ -8,20 +8,17 @@
 import Foundation
 import SwiftUI
 
-class Forca: NSObject, ObservableObject {
+class Forca: ObservableObject {
     @Published var palavra          : String
     @Published var dica             : String
     @Published var letrasUsadas     : Array<String>
     @Published var tentativas       : Int
     @Published var acertos          : Int
     @Published var palavraEscondida : Array<String>
-    @Published var banco            : Array<PalaDica>
-
     
-    init(palaDica: Array<PalaDica>){
+    init() {
         self.palavra = ""
         self.dica = ""
-        self.banco = palaDica
         self.letrasUsadas = Array<String>()
         self.tentativas = 6
         self.acertos = 0
@@ -43,16 +40,14 @@ class Forca: NSObject, ObservableObject {
         }
     }
     
-    func escolher(){
-        let index = Int.random(in: 1...self.banco.count)
-//        self.palavra = self.banco[index].palavra!
-//        self.dica = self.banco[index].dica!
-        self.palavra = self.banco[index].palavra!
-        self.dica = self.banco[index].dica!
+    func sortear(banco: FetchedResults<PalaDica>) {
+        let index = Int.random(in: 0...banco.count - 1)
+        self.palavra = banco[index].palavra!
+        self.dica = banco[index].dica!
     }
 
-    func iniciarJogo() {
-        self.escolher()
+    func iniciarJogo(banco: FetchedResults<PalaDica>) {
+        self.sortear(banco: banco)
         self.ocultarPalavra()
     }
     

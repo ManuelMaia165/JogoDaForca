@@ -19,8 +19,8 @@
 		BA93F5CE28789CDF0006A1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA93F5B728789CDF0006A1EC /* Assets.xcassets */; };
 		BA93F5D928789DB70006A1EC /* Forca.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93F5D828789DB70006A1EC /* Forca.swift */; };
 		BA93F5DB2878BBCB0006A1EC /* JogarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93F5DA2878BBCB0006A1EC /* JogarView.swift */; };
-		BA962DB9287B63AD00BC5F72 /* Jubiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA962DB8287B63AD00BC5F72 /* Jubiral.swift */; };
-		BA962DBA287B63AD00BC5F72 /* Jubiral.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA962DB8287B63AD00BC5F72 /* Jubiral.swift */; };
+		BA962DBC287B66B300BC5F72 /* AuxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA962DBB287B66B300BC5F72 /* AuxModel.swift */; };
+		BA962DBD287B66B300BC5F72 /* AuxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA962DBB287B66B300BC5F72 /* AuxModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 		BA93F5C428789CDF0006A1EC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		BA93F5D828789DB70006A1EC /* Forca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forca.swift; sourceTree = "<group>"; };
 		BA93F5DA2878BBCB0006A1EC /* JogarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogarView.swift; sourceTree = "<group>"; };
-		BA962DB8287B63AD00BC5F72 /* Jubiral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jubiral.swift; sourceTree = "<group>"; };
+		BA962DBB287B66B300BC5F72 /* AuxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,6 @@
 				BA93F5B628789CDE0006A1EC /* Persistence.swift */,
 				BA93F5B728789CDF0006A1EC /* Assets.xcassets */,
 				BA93F5B228789CDE0006A1EC /* JogoDaForca.xcdatamodeld */,
-				BA962DB8287B63AD00BC5F72 /* Jubiral.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -100,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				BA93F5D828789DB70006A1EC /* Forca.swift */,
+				BA962DBB287B66B300BC5F72 /* AuxModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -202,12 +202,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA962DBC287B66B300BC5F72 /* AuxModel.swift in Sources */,
 				BA93F5DB2878BBCB0006A1EC /* JogarView.swift in Sources */,
 				BA93F5D928789DB70006A1EC /* Forca.swift in Sources */,
 				BA93F5C528789CDF0006A1EC /* JogoDaForca.xcdatamodeld in Sources */,
 				BA93F5CB28789CDF0006A1EC /* Persistence.swift in Sources */,
 				BA93F5C728789CDF0006A1EC /* JogoDaForcaApp.swift in Sources */,
-				BA962DB9287B63AD00BC5F72 /* Jubiral.swift in Sources */,
 				BA93F5C928789CDF0006A1EC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,11 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA962DBD287B66B300BC5F72 /* AuxModel.swift in Sources */,
 				BA93F5C628789CDF0006A1EC /* JogoDaForca.xcdatamodeld in Sources */,
 				BA93F5CC28789CDF0006A1EC /* Persistence.swift in Sources */,
 				BA93F5C828789CDF0006A1EC /* JogoDaForcaApp.swift in Sources */,
 				BA93F5CA28789CDF0006A1EC /* ContentView.swift in Sources */,
-				BA962DBA287B63AD00BC5F72 /* Jubiral.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

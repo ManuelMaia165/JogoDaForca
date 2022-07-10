@@ -14,14 +14,13 @@ struct ContentView: View {
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \PalaDica.palavra, ascending: true)],
         animation: .default)
-    private var palasDicas: FetchedResults <PalaDica>
+    var palasDicas: FetchedResults <PalaDica>
     
     @State private var palavra      : String = ""
     @State private var dica         : String = ""
     @FocusState private var keyboard: Bool
     
     var body: some View {
-        
         NavigationView {
             VStack {
                 TextField("Palavra", text: self.$palavra)
@@ -78,6 +77,7 @@ struct ContentView: View {
         }
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
