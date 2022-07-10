@@ -61,25 +61,24 @@ class Forca: ObservableObject {
     }
     
     func arriscarLetra(letra: String) {
-        if (!letra.isEmpty){
+        if (!letra.isEmpty) {
             var existe = false
             
-            if (self.testarLetra(letra: letra)){
+            if (self.testarLetra(letra: letra)) {
                var count = 0
                 for c in self.palavra {
                     if (letra.uppercased() == c.uppercased()){
                         self.acertos += 1
-                        self.palavraEscondida[count] = letra
+                        self.palavraEscondida[count] = letra.uppercased()
                         existe = true
                     }
                     count += 1
                 }
             }
             
-            if (!existe){
+            if (!existe && !self.perdeu()) {
                 self.tentativas -= 1
             }
-                
         }
         
     }

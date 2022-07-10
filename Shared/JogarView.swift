@@ -10,7 +10,7 @@ import CoreData
 
 struct JogarView: View {
     @Environment(\.managedObjectContext) var viewContext
-    @Environment (\.presentationMode) var presentationMod
+    @Environment(\.presentationMode) var presentationMod
     
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \PalaDica.palavra, ascending: true)],
@@ -42,8 +42,15 @@ struct JogarView: View {
             
             Section("Entrada"){
                 Text("Dica: \(self.game.dica)")
-                Text("Palavra: \(self.game.palavraEscondida.joined(separator: " "))")
+                Text("Palavra: \(self.game.palavraEscondida.joined(separator: "  "))")
+                Text("Letras usadas: \(self.game.letrasUsadas.joined(separator: "  "))")
                 TextField("Digite uma letra", text: self.$letra)
+                Button {
+                    self.game.arriscarLetra(letra: self.letra)
+                } label: {
+                    Label("Arriscar", systemImage: "")
+                }
+
             }
         }
     }
