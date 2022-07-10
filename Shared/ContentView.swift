@@ -64,15 +64,15 @@ struct ContentView: View {
                     }
                 }
             }
-        }
-        .navigationTitle("Cadastro Palavras")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItemGroup(placement: .keyboard) {
-                Button {
-                    self.keyboard = false
-                } label: {
-                    Label("Fechar", systemImage: "")
+            .navigationTitle("Cadastro Palavras")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Button {
+                        self.keyboard = false
+                    } label: {
+                        Label("Fechar", systemImage: "")
+                    }
                 }
             }
         }
