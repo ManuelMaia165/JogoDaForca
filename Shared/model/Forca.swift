@@ -15,10 +15,10 @@ class Forca: NSObject, ObservableObject {
     @Published var tentativas       : Int
     @Published var acertos          : Int
     @Published var palavraEscondida : Array<String>
-//    @Published var banco            : Array<PalaDica>
-    @Published var banco            : Array<AuxDoidera>
+    @Published var banco            : Array<PalaDica>
+
     
-    init(palaDica: Array<AuxDoidera>){
+    init(palaDica: Array<PalaDica>){
         self.palavra = ""
         self.dica = ""
         self.banco = palaDica
@@ -47,8 +47,8 @@ class Forca: NSObject, ObservableObject {
         let index = Int.random(in: 1...self.banco.count)
 //        self.palavra = self.banco[index].palavra!
 //        self.dica = self.banco[index].dica!
-        self.palavra = self.banco[index].palavra
-        self.dica = self.banco[index].dica
+        self.palavra = self.banco[index].palavra!
+        self.dica = self.banco[index].dica!
     }
 
     func iniciarJogo() {

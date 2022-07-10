@@ -18,36 +18,37 @@ struct JogarView: View {
         animation: .default)
     var palasDicas: FetchedResults<PalaDica>
     
-    @ObservedObject var game: Forca
-    @State var letra        : String = ""
+//    @ObservedObject var game: Forca
+    @State var letra : String = ""
     
     var body: some View {
-        Form {
-            Section("Exibição"){
-                HStack{
-                    Spacer()
-                    Image("hangman\(6 - self.game.tentativas)")
-                       .resizable()
-                       .scaledToFit()
-                       .frame(height: 140)
-                   Spacer()
-                         
-                }
-            }
-            Section("Entrada"){
-                Text("Dica: \(self.game.dica)")
-                Spacer()
-                Text("\(self.game.palavraEscondida.joined(separator: " "))")
-                Spacer()
-                TextField("Digite uma letra", text: self.$letra)
-                Spacer()
-            }
-        }
+        Text("Hello")
+//        Form {
+//            Section("Exibição"){
+//                HStack{
+//                    Spacer()
+//                    Image("hangman\(6 - self.game.tentativas)")
+//                       .resizable()
+//                       .scaledToFit()
+//                       .frame(height: 140)
+//                   Spacer()
+//
+//                }
+//            }
+//            Section("Entrada"){
+//                Text("Dica: \(self.game.dica)")
+//                Spacer()
+//                Text("\(self.game.palavraEscondida.joined(separator: " "))")
+//                Spacer()
+//                TextField("Digite uma letra", text: self.$letra)
+//                Spacer()
+//            }
+//        }
     }
 }
 
 struct JogarView_Previews: PreviewProvider {
     static var previews: some View {
-        JogarView(, game: Forca)
+        JogarView()
     }
 }

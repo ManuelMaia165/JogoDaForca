@@ -19,34 +19,18 @@ struct ContentView: View {
     @State private var palavra      : String = ""
     @State private var dica         : String = ""
     @FocusState private var keyboard: Bool
-    private var listObjectPalaDica  = Array<PalaDica>()
-    var listAuxDoideraObject = Array<AuxDoidera>()
-    
-    @ObservedObject private var game: Forca
     
     var body: some View {
         
-//        Forca(palaDica: listAuxDoideraObject)
-//        List {
-//            ForEach(palasDicas) { palaDica in
-//                listObjectPalaDica.append(palaDica)
-//            }
-//        }
-//        List{
-//            ForEach(palasDicas) { palaDica in
-//                AuxDoidera(palavra: palaDica.palavra!, dica: palaDica.dica!)
-//            }
-//        }
-        
         NavigationView {
-            VStack{
+            VStack {
                 TextField("Palavra", text: self.$palavra)
                     .padding()
                     .focused(self.$keyboard)
                 TextField("Dica", text: self.$dica)
                     .padding()
                     .focused(self.$keyboard)
-                HStack{
+                HStack {
                     Spacer()
                     Button {
                         let palaDica = PalaDica(context: viewContext)
@@ -70,11 +54,20 @@ struct ContentView: View {
                     }
                     Spacer()
                 }
+                List {
+                    ForEach(palasDicas) { palaDica in
+                        NavigationLink {
+                            Text("Palavra: \(palaDica.palavra!) - Dica: \(palaDica.dica!)")
+                        } label: {
+                            Text("Palavra: \(palaDica.palavra!) - Dica: \(palaDica.dica!)")
+                        }
+                    }
+                }
             }
         }
         .navigationTitle("Cadastro Palavras")
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar{
+        .toolbar {
             ToolbarItemGroup(placement: .keyboard) {
                 Button {
                     self.keyboard = false
@@ -83,10 +76,11 @@ struct ContentView: View {
                 }
             }
         }
+    }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
