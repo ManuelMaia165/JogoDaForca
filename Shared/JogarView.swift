@@ -21,17 +21,17 @@ struct JogarView: View {
     @State var letra : String = ""
     
     var body: some View {
+        Button {
+            iniciarJogo()
+        } label: {
+            Label("Iniciar jogo", systemImage: "")
+        }
+        
         Form {
-            Button {
-                iniciarJogo()
-            } label: {
-                Label("Inciar jogo", systemImage: "")
-            }
-
-            Section("Exibição"){
-                HStack{
+            Section("Exibição") {
+                HStack {
                     Spacer()
-                    Image("hangman\(6 - self.game.tentativas)")
+                    Image("hangman0\(6 - self.game.tentativas)")
                        .resizable()
                        .scaledToFit()
                        .frame(height: 140)
@@ -39,19 +39,17 @@ struct JogarView: View {
 
                 }
             }
+            
             Section("Entrada"){
                 Text("Dica: \(self.game.dica)")
-                Spacer()
-                Text("\(self.game.palavraEscondida.joined(separator: " "))")
-                Spacer()
+                Text("Palavra: \(self.game.palavraEscondida.joined(separator: " "))")
                 TextField("Digite uma letra", text: self.$letra)
-                Spacer()
             }
         }
     }
     
     public func iniciarJogo() {
-        self.game.sortear(banco: palasDicas)
+        self.game.iniciarJogo(banco: palasDicas)
     }
 }
 
