@@ -19,6 +19,7 @@
 		BA93F5CE28789CDF0006A1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA93F5B728789CDF0006A1EC /* Assets.xcassets */; };
 		BA93F5D928789DB70006A1EC /* Forca.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93F5D828789DB70006A1EC /* Forca.swift */; };
 		BA93F5DB2878BBCB0006A1EC /* JogarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93F5DA2878BBCB0006A1EC /* JogarView.swift */; };
+		BA96CA01287B88E400D8154F /* ResultadoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA96CA00287B88E400D8154F /* ResultadoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BA93F5C428789CDF0006A1EC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		BA93F5D828789DB70006A1EC /* Forca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forca.swift; sourceTree = "<group>"; };
 		BA93F5DA2878BBCB0006A1EC /* JogarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogarView.swift; sourceTree = "<group>"; };
+		BA96CA00287B88E400D8154F /* ResultadoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA6F1D78287B871E00EA83A9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BA93F5DA2878BBCB0006A1EC /* JogarView.swift */,
+				BA96CA00287B88E400D8154F /* ResultadoView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		BA93F5AC28789CDD0006A1EC = {
 			isa = PBXGroup;
 			children = (
@@ -64,9 +75,9 @@
 		BA93F5B128789CDE0006A1EC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BA6F1D78287B871E00EA83A9 /* view */,
 				BA93F5D728789D9D0006A1EC /* model */,
 				BA93F5B428789CDE0006A1EC /* JogoDaForcaApp.swift */,
-				BA93F5DA2878BBCB0006A1EC /* JogarView.swift */,
 				BA93F5B528789CDE0006A1EC /* ContentView.swift */,
 				BA93F5B628789CDE0006A1EC /* Persistence.swift */,
 				BA93F5B728789CDF0006A1EC /* Assets.xcassets */,
@@ -200,6 +211,7 @@
 			files = (
 				BA93F5DB2878BBCB0006A1EC /* JogarView.swift in Sources */,
 				BA93F5D928789DB70006A1EC /* Forca.swift in Sources */,
+				BA96CA01287B88E400D8154F /* ResultadoView.swift in Sources */,
 				BA93F5C528789CDF0006A1EC /* JogoDaForca.xcdatamodeld in Sources */,
 				BA93F5CB28789CDF0006A1EC /* Persistence.swift in Sources */,
 				BA93F5C728789CDF0006A1EC /* JogoDaForcaApp.swift in Sources */,

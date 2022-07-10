@@ -45,12 +45,21 @@ struct JogarView: View {
                 Text("Palavra: \(self.game.palavraEscondida.joined(separator: "  "))")
                 Text("Letras usadas: \(self.game.letrasUsadas.joined(separator: "  "))")
                 TextField("Digite uma letra", text: self.$letra)
+                
                 Button {
                     self.game.arriscarLetra(letra: self.letra)
                 } label: {
                     Label("Arriscar", systemImage: "")
                 }
+                
+                if(self.game.terminou()) {
+                    NavigationLink {
+                        ResultadoView().environmentObject(self.game)
+                    } label: {
+                        Label("Resultado", systemImage: "")
+                    }
 
+                }
             }
         }
     }

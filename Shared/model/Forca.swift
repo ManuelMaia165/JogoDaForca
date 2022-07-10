@@ -33,10 +33,16 @@ class Forca: ObservableObject {
         return self.tentativas == 0
     }
     
+    func terminou() -> Bool {
+        return self.ganhou() || self.perdeu()
+    }
+    
     func ocultarPalavra() {
-        for _ in self.palavra {
-            self.palavraEscondida.append("_")
-            
+        if(self.palavraEscondida.isEmpty) {
+            for _ in self.palavra {
+                self.palavraEscondida.append("_")
+                
+            }
         }
     }
     
@@ -47,6 +53,7 @@ class Forca: ObservableObject {
     }
 
     func iniciarJogo(banco: FetchedResults<PalaDica>) {
+        self.reset()
         self.sortear(banco: banco)
         self.ocultarPalavra()
     }
@@ -80,6 +87,14 @@ class Forca: ObservableObject {
                 self.tentativas -= 1
             }
         }
-        
+    }
+    
+    func reset() {
+        self.palavra = ""
+        self.dica = ""
+        self.letrasUsadas = Array<String>()
+        self.tentativas = 6
+        self.acertos = 0
+        self.palavraEscondida = Array<String>()
     }
 }
